@@ -3,13 +3,51 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans TC", "Fira Sans Extra Condensed", "Philosopher",
-    sans-serif;
-  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
   color: #000;
 }
 
-h2,
+.wrapper-content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #FFF5DA;
+}
+
+.logo {
+  font-family: "Fira Sans Extra Condensed",sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.055em;
+  text-decoration: underline;
+}
+
+.header-nav {
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link{
+  font-family: "Noto Sans TC",sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.075em;
+}
+
+.nav__link:hover {
+  color: #FFB500;
+  transition: all 0.2s;
+}
+
+/* h2,
 h2 span {
   font-family: "Philosopher";
   font-size: 72px;
@@ -34,10 +72,6 @@ li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 .a-button {
   width: fit-content;
   background-color: #000;
@@ -57,13 +91,6 @@ a:hover {
 .a-button:hover {
   background-color: #ffb500;
   color: white;
-}
-
-.logo {
-  font-family: "Fira Sans Extra Condensed";
-  font-size: 24px;
-  letter-spacing: 0.055em;
-  text-decoration: underline;
 }
 
 .wrapper-content {
@@ -263,4 +290,4 @@ footer .list-grid {
   display: grid;
   grid-template-rows: repeat(3, max-content);
   grid-row-gap: 25px;
-}
+} */
