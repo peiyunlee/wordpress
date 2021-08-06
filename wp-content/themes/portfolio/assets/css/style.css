@@ -8,6 +8,27 @@
 a {
   text-decoration: none;
   color: #000;
+  display: inline-block;
+}
+
+p {
+  font-family: "Noto Sans TC",sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.button-link {
+  font-family: "Noto Sans TC",sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: #000;
+  color: white;
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+
+i {
+  width: 20px;
 }
 
 .wrapper-content {
@@ -15,18 +36,23 @@ a {
   margin: 0 auto;
 }
 
+header {
+  background-color: #FFF5DA;
+}
+
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  height: 70px;
+  padding: 0 50px;
   background-color: #FFF5DA;
 }
 
 .logo {
   font-family: "Fira Sans Extra Condensed",sans-serif;
   font-size: 24px;
-  letter-spacing: 0.055em;
+  letter-spacing: 1px;
   text-decoration: underline;
 }
 
@@ -39,7 +65,7 @@ a {
 .nav__link{
   font-family: "Noto Sans TC",sans-serif;
   font-size: 16px;
-  letter-spacing: 0.075em;
+  letter-spacing: 3px;
 }
 
 .nav__link:hover {
@@ -47,14 +73,57 @@ a {
   transition: all 0.2s;
 }
 
-/* h2,
-h2 span {
+.index-content {
+  background-color: #FFF5DA;
+  padding: 100px 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index__titile{
   font-family: "Philosopher";
   font-size: 72px;
   font-weight: bold;
   color: #000;
+  margin-bottom: 20px;
 }
 
+.index__titile > span {
+  color: white;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+.index__titile{
+  margin-bottom: 20px;
+}
+
+.index__text{
+  margin-bottom: 25px;
+}
+
+.index__button-link {
+  margin-bottom: 40px;
+}
+
+.index__social{
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper-index-text {
+  width: 450px;
+}
+
+.index__main-img {
+  width: 670px;
+  height: 100%;
+}
+
+/* 
 h3 {
   font-size: 24px;
   font-weight: bold;
@@ -91,37 +160,6 @@ a:hover {
 .a-button:hover {
   background-color: #ffb500;
   color: white;
-}
-
-.wrapper-content {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-header {
-  background-color: #fff5da;
-}
-
-header .wrapper-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  padding: 0 50px;
-}
-
-nav ul {
-  display: grid;
-  grid-auto-flow: column;
-  grid-column-gap: 60px;
-  grid-template-columns: repeat(3, 70px);
-}
-
-nav a {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  letter-spacing: 3px;
 }
 
 main {
