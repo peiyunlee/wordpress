@@ -73,9 +73,13 @@ header {
   transition: all 0.2s;
 }
 
+.section-index {
+  background-color: #FFF5DA;
+}
+
 .index-content {
   background-color: #FFF5DA;
-  padding: 100px 120px;
+  padding: 100px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,6 +123,7 @@ header {
 }
 
 .index__main-img {
+  /* width: 50%; */
   width: 670px;
   height: 100%;
 }
