@@ -13,22 +13,17 @@ a {
 }
 
 p {
-  font-size: 16px;
   color: #333;
-}
-
-.link-button {
-  font-family: "Noto Sans TC",sans-serif;
-  font-size: 16px;
-  letter-spacing: 2px;
-  background-color: #000;
-  color: white;
-  border-radius: 3px;
-  padding: 10px 20px;
 }
 
 i {
   width: 20px;
+}
+
+hr {
+  width: 30px;
+  height: 2px;
+  background-color: #000;
 }
 
 header {
@@ -63,13 +58,12 @@ header {
   justify-content: space-between;
 }
 
-.nav__link{
+.nav__text{
   font-family: "Noto Sans TC",sans-serif;
-  font-size: 16px;
   letter-spacing: 3px;
 }
 
-.nav__link:hover {
+.nav__link:hover,.link-text:hover {
   color: #FFB500;
   transition: all 0.2s;
 }
@@ -79,10 +73,10 @@ header {
 }
 
 .primary-content {
+  padding-top: 10px;
   justify-content: center;
   align-items: center;
   background-color: #FFF5DA;
-  padding-top: 10px;
 }
 
 .section__titile {
@@ -108,6 +102,20 @@ header {
   letter-spacing: 1px;
 }
 
+.link-button {
+  font-family: "Noto Sans TC",sans-serif;
+  letter-spacing: 2px;
+  background-color: #000;
+  color: white;
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+
+.link-button:hover {
+  background-color: #FFB500;
+  transition: all 0.2s;
+}
+
 .primary__link-button {
   margin-bottom: 40px;
 }
@@ -130,14 +138,11 @@ header {
   height: 100%;
 }
 
-.section-secondary {
-  padding-top: 80px;
-}
-
 .secondary-content {
+  padding-top: 80px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .secondary__titile {
@@ -160,10 +165,12 @@ header {
   margin: 20px 0 10px;
 }
 
-.work__text {
-  font-size: 16px;
-  letter-spacing: 2px;
+.secondary__text {
+  letter-spacing: 1px;
   color: #333;
+}
+
+.wrapper-selected-works .secondary__text {
   margin-bottom: 10px;
 }
 
@@ -173,216 +180,70 @@ header {
 }
 
 .secondary__link-button {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .link-text {
   text-decoration: underline;
 }
 
-/* 
-h3 {
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 0.075em;
-  color: #333;
-}
-
-p {
-  color: #333;
-  line-height: 140%;
-  letter-spacing: 0.075em;
-}
-
-li {
-  list-style: none;
-}
-
-.a-button {
-  width: fit-content;
-  background-color: #000;
-  border-radius: 3px;
-  display: inline-block;
-  padding: 10px 20px;
-  line-height: 120%;
-  letter-spacing: 0.075em;
-  color: white;
-}
-
-a:hover {
-  transition: 0.15s all;
-  color: #ffb500;
-}
-
-.a-button:hover {
-  background-color: #ffb500;
-  color: white;
-}
-
-main {
-  padding-bottom: 155px;
-}
-
-section {
-  display: grid;
-  padding: 75px 0 85px;
-}
-
-hr {
-  width: 25px;
-  height: 2px;
-  background-color: #000;
-  margin: 0 auto;
-}
-
-#section-web-info {
-  background-color: #fff5da;
-}
-
-#section-web-info .wrapper-content {
-  padding: 0 50px 0 120px;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 450px auto;
-  justify-content: center;
-}
-
-.wrapper-web-info {
-  display: grid;
-  grid-template-rows: 275px 95px auto auto;
-}
-
-.wrapper-web-info span {
-  color: white;
-  -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: #000;
-}
-
-.wrapper-icon {
-  margin-top: 40px;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: 24px;
-  grid-template-columns: repeat(4, 30px);
-  grid-column-gap: 25px;
-  justify-items: center;
-  align-items: center;
-}
-
-.section-page-info h2 {
-  margin-bottom: 85px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 40px;
-  letter-spacing: 0.1em;
-  text-align: center;
-}
-
-.wrapper-selected-works {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 70px;
-}
-
-.wrapper-selected-work {
-  display: grid;
-  grid-template-rows: 320px 45px 60px 60px auto auto;
-}
-
-.wrapper-selected-work .work-position {
-  color: #777777;
-  line-height: 140%;
-  letter-spacing: 0.075em;
-}
-
-.wrapper-selected-work .view-all-works {
-  color: #000000;
-  margin-top: 15px;
-}
-
-.wrapper-selected-work .view-all-works a {
-  color: #000000;
-  text-decoration: underline;
-  margin-left: 6px;
-  line-height: 140%;
-  letter-spacing: 0.075em;
-}
-
-.wrapper-selected-work .view-all-works a:hover {
-  color: #ffb500;
-}
-
 .wrapper-about {
-  width: 100%;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: auto 480px;
-  grid-column-gap: 100px;
+  width: 850px;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.wrapper-about-grid {
-  display: grid;
-  grid-template-rows: auto 50px;
-  grid-row-gap: 50px;
-  height: 100%;
-  align-items: center;
+.wrapper-about-text {
+  width: 520px;
 }
 
-.wrapper-about p {
-  color: #333;
-  line-height: 150%;
-  margin-bottom: 10px;
-}
-
-.wrapper-about .ul-title {
+.about__title {
   font-weight: bold;
-  letter-spacing: 0.075em;
-  margin: 20px 0 10px 0;
 }
 
-.wrapper-about ul {
-  display: grid;
-  grid-template-columns: repeat(3, max-content);
-  grid-auto-rows: 30px;
-  grid-column-gap: 50px;
+.about__skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 0;
 }
 
-.wrapper-about li {
-  width: min-content;
-  letter-spacing: 0.075em;
-  list-style: disc;
-  margin-left: 20px;
+.about__skill-item {
+  margin: 3px 50px 3px 0;
+  width: fit-content;
 }
 
 footer {
-  background-color: #fff5da;
+  background-color: #FFF5DA;
 }
 
-footer .wrapper-content {
-  line-height: 120%;
-  letter-spacing: 0.25em;
-  padding: 35px 120px;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 220px auto;
+.footer-content {
+  padding: 35px 100px 50px;
+  display: flex;
   justify-content: center;
-  grid-column-gap: 120px;
 }
 
-.wrapper-footer-nav {
-  display: grid;
-  grid-template-columns: repeat(3, max-content);
-  grid-column-gap: 85px;
+.footer__text {
+  letter-spacing: 3px;
+  color: #333;
+  margin-top: 10px;
 }
 
-.wrapper-footer-nav .ul-title {
+footer nav {
+  display: flex;
+  margin-left: 50px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.footer-nav-list__titile  {
   font-weight: bold;
 }
 
-footer .list-grid {
-  display: grid;
-  grid-template-rows: repeat(3, max-content);
-  grid-row-gap: 25px;
-} */
+footer .nav__text {
+margin-bottom: 10px;
+}
