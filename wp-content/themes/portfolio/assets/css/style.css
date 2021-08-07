@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Fira+Sans+Extra+Condensed:ital,wght@1,700&family=Philosopher:wght@700&display=swap");
 
-* {
+body {
   margin: 0;
   padding: 0;
+  font-family: 'Noto sans TC',sans-serif;
 }
 
 a {
@@ -12,15 +13,14 @@ a {
 }
 
 p {
-  font-family: "Noto Sans TC",sans-serif;
   font-size: 16px;
-  letter-spacing: 1px;
+  color: #333;
 }
 
-.button-link {
+.link-button {
   font-family: "Noto Sans TC",sans-serif;
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   background-color: #000;
   color: white;
   border-radius: 3px;
@@ -31,17 +31,18 @@ i {
   width: 20px;
 }
 
-.wrapper-content {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
 header {
   background-color: #FFF5DA;
 }
 
-.header-content {
+.wrapper-content {
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
+  padding-bottom: 80px;
+}
+
+.header-content {
   justify-content: space-between;
   align-items: center;
   height: 70px;
@@ -73,59 +74,110 @@ header {
   transition: all 0.2s;
 }
 
-.section-index {
+.section-primary {
   background-color: #FFF5DA;
 }
 
-.index-content {
-  background-color: #FFF5DA;
-  padding: 100px 50px;
-  display: flex;
+.primary-content {
   justify-content: center;
   align-items: center;
+  background-color: #FFF5DA;
+  padding-top: 10px;
 }
 
-.index__titile{
+.section__titile {
   font-family: "Philosopher";
-  font-size: 72px;
   font-weight: bold;
   color: #000;
+  letter-spacing: 2px;
+}
+
+.primary__titile{
+  font-size: 72px;
   margin-bottom: 20px;
 }
 
-.index__titile > span {
+.primary__titile > span {
   color: white;
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: #000;
 }
 
-.index__titile{
-  margin-bottom: 20px;
-}
-
-.index__text{
+.primary__text{
   margin-bottom: 25px;
+  letter-spacing: 1px;
 }
 
-.index__button-link {
+.primary__link-button {
   margin-bottom: 40px;
 }
 
-.index__social{
-  width: 120px;
+.primary__social{
+  width: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.wrapper-index-text {
-  width: 450px;
+.wrapper-primary-text {
+  width: 35%;
+  /* width: 450px; */
 }
 
-.index__main-img {
-  /* width: 50%; */
-  width: 670px;
+.primary__main-img {
+  width: 50%;
+  /* width: 670px; */
   height: 100%;
+}
+
+.section-secondary {
+  padding-top: 80px;
+}
+
+.secondary-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.secondary__titile {
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.wrapper-selected-works {
+  width: 1040px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work__titile {
+  font-family: 'Noto sans TC',sans-serif;
+  font-size: 24px;
+  color: #333;
+  letter-spacing: 1px;
+  margin: 20px 0 10px;
+}
+
+.work__text {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.work__position {
+  height: 46px;
+  color: #777;
+}
+
+.secondary__link-button {
+  margin: 10px 0;
+}
+
+.link-text {
+  text-decoration: underline;
 }
 
 /* 
