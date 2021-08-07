@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Noto sans TC',sans-serif;
+  font-family: "Noto sans TC", sans-serif;
 }
 
 a {
@@ -27,7 +27,7 @@ hr {
 }
 
 header {
-  background-color: #FFF5DA;
+  background-color: #fff5da;
 }
 
 .wrapper-content {
@@ -42,11 +42,11 @@ header {
   align-items: center;
   height: 70px;
   padding: 0 50px;
-  background-color: #FFF5DA;
+  background-color: #fff5da;
 }
 
 .logo {
-  font-family: "Fira Sans Extra Condensed",sans-serif;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
   font-size: 24px;
   letter-spacing: 1px;
   text-decoration: underline;
@@ -58,25 +58,26 @@ header {
   justify-content: space-between;
 }
 
-.nav__text{
-  font-family: "Noto Sans TC",sans-serif;
+.nav__text {
+  font-family: "Noto Sans TC", sans-serif;
   letter-spacing: 3px;
 }
 
-.nav__link:hover,.link-text:hover {
-  color: #FFB500;
+.nav__link:hover,
+.link-text:hover {
+  color: #ffb500;
   transition: all 0.2s;
 }
 
 .section-primary {
-  background-color: #FFF5DA;
+  background-color: #fff5da;
 }
 
 .primary-content {
   padding-top: 10px;
   justify-content: center;
   align-items: center;
-  background-color: #FFF5DA;
+  background-color: #fff5da;
 }
 
 .section__titile {
@@ -86,7 +87,7 @@ header {
   letter-spacing: 2px;
 }
 
-.primary__titile{
+.primary__titile {
   font-size: 72px;
   margin-bottom: 20px;
 }
@@ -97,13 +98,13 @@ header {
   -webkit-text-stroke-color: #000;
 }
 
-.primary__text{
+.primary__text {
   margin-bottom: 25px;
   letter-spacing: 1px;
 }
 
 .link-button {
-  font-family: "Noto Sans TC",sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   letter-spacing: 2px;
   background-color: #000;
   color: white;
@@ -112,7 +113,7 @@ header {
 }
 
 .link-button:hover {
-  background-color: #FFB500;
+  background-color: #ffb500;
   transition: all 0.2s;
 }
 
@@ -120,7 +121,7 @@ header {
   margin-bottom: 40px;
 }
 
-.primary__social{
+.primary__social {
   width: 150px;
   display: flex;
   justify-content: space-between;
@@ -129,12 +130,10 @@ header {
 
 .wrapper-primary-text {
   width: 35%;
-  /* width: 450px; */
 }
 
 .primary__main-img {
   width: 50%;
-  /* width: 670px; */
   height: 100%;
 }
 
@@ -152,17 +151,19 @@ header {
 }
 
 .wrapper-selected-works {
-  width: 1040px;
+  width: 80%;
+  min-width: 950px;
   display: flex;
   justify-content: space-between;
 }
 
 .work__titile {
-  font-family: 'Noto sans TC',sans-serif;
+  font-family: "Noto sans TC", sans-serif;
   font-size: 24px;
   color: #333;
   letter-spacing: 1px;
-  margin: 20px 0 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .secondary__text {
@@ -185,6 +186,7 @@ header {
 
 .link-text {
   text-decoration: underline;
+  font-weight: bold;
 }
 
 .wrapper-about {
@@ -195,7 +197,7 @@ header {
 }
 
 .wrapper-about-text {
-  width: 520px;
+  width: 60%;
 }
 
 .about__title {
@@ -214,11 +216,11 @@ header {
 }
 
 footer {
-  background-color: #FFF5DA;
+  background-color: #fff5da;
 }
 
 .footer-content {
-  padding: 35px 100px 50px;
+  padding: 35px 0 50px;
   display: flex;
   justify-content: center;
 }
@@ -240,10 +242,74 @@ footer nav {
   margin-left: 70px;
 }
 
-.footer-nav-list__titile  {
+.footer-nav-list__titile {
   font-weight: bold;
 }
 
 footer .nav__text {
-margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header-nav {
+    width: 280px;
+  }
+  .primary__main-img {
+    align-self: flex-end;
+  }
+
+  .primary-content {
+    padding-bottom: 0px;
+  }
+
+  .wrapper-primary-text {
+    padding-bottom: 70px;
+  }
+
+  .secondary-content {
+    padding-top: 50px;
+  }
+
+  .wrapper-selected-works {
+    min-width: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .wrapper-work {
+    width: 600px;
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .wrapper-work-text {
+    margin-left: 50px;
+  }
+
+  .work__titile {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .wrapper-about {
+    width: 690px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    width: 670px;
+  }
+
+  footer nav {
+    margin-top: 30px;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-nav-list {
+    margin-left: 0;
+  }
 }
